@@ -24,8 +24,7 @@ It extracts:
 ---
 
 ## LLM Choice
-
-I used the Google Gemini API for this assignment because it provides fast response times, good support for structured outputs, and a simple integration process. This allowed me to focus more on prompt design, error handling, and overall application flow rather than SDK complexity.
+  I used the Google Gemini API for this assignment because it provides fast response times, good support for structured outputs, and a simple integration process. This allowed me to focus more on prompt design,   error handling, and overall application flow rather than SDK complexity.
 ---
 
 ## Features
