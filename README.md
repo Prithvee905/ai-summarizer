@@ -19,6 +19,13 @@ It extracts:
 * Backend: Node.js + Express
 * LLM: Google Gemini API
 
+
+
+---
+
+## LLM Choice
+
+I used the Google Gemini API for this assignment because it provides fast response times, good support for structured outputs, and a simple integration process. This allowed me to focus more on prompt design, error handling, and overall application flow rather than SDK complexity.
 ---
 
 ## Features
@@ -97,6 +104,9 @@ Response:
 
 ## Prompt Design
 
+
+The prompt was designed to enforce a strict JSON structure with predefined fields: summary, keyPoints, and sentiment. By explicitly defining the expected schema and constraints (such as limiting key points and sentiment values), the model is guided to produce consistent and parseable outputs. This reduces ambiguity and simplifies backend processing.
+
 The prompt enforces strict JSON output with:
 
 * fixed structure
@@ -113,15 +123,18 @@ This reduces parsing errors and ensures consistent responses.
 * Chose minimal UI to focus on functionality
 * Used regex-based JSON extraction to handle imperfect LLM responses
 * Skipped authentication due to assignment scope
-
+* I used a regex-based approach to extract JSON from the model response instead of implementing a full schema validation system, to keep the solution simple and within the time constraint.
+* The UI is intentionally minimal to prioritize core functionality and LLM integration.
+* A single API endpoint was used to maintain simplicity and clarity in the architecture.
 ---
 
 ## Future Improvements
 
-* File upload support
-* Batch processing
-* Custom output formats
-* Better UI styling
+* Add support for file uploads (e.g., PDF, TXT)
+* Implement batch processing for multiple inputs
+* Allow customizable output formats
+* Improve UI/UX with better styling and responsiveness
+
 
 ---
 
